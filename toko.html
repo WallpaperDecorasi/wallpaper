@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Decorasi Sidrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            margin-left: 10px;
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
+            color: #ffd166;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 25px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ffd166;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 50px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .price {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #ffd166;
+            margin: 20px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #2a9d8f;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+        
+        .cta-button:hover {
+            background-color: #21867a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cta-button.whatsapp {
+            background-color: #25D366;
+        }
+        
+        .cta-button.whatsapp:hover {
+            background-color: #1da851;
+        }
+        
+        /* Products Section */
+        .products {
+            padding: 60px 0;
+            background-color: white;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+            font-size: 2.2rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: #2a9d8f;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-img {
+            height: 220px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-img.wallpaper1 {
+            background-image: url('gambar/gambar1.jpg');
+        }
+        
+        .product-img.wallpaper2 {
+            background-image: url('gambar/gambar2.jpg');
+        }
+        
+        .product-img.wallpaper3 {
+            background-image: url('gambar/gambar3.jpg');
+        }
+        
+        .product-img.wallpaper4 {
+            background-image: url('gambar/gambar4.jpg');
+        }
+        
+        .product-img.wallpaper5 {
+            background-image: url('gambar/gambar5.jpg');
+        }
+        
+        .product-img.wallpaper6 {
+            background-image: url('gambar/gambar6.jpg');
+        }
+        .product-content {
+            padding: 25px;
+        }
+        
+        .product-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2a9d8f;
+            margin-bottom: 15px;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 60px 0;
+            background-color: #f1faee;
+            margin-bottom: 50px;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .highlight {
+            color: #2a9d8f;
+            font-weight: 600;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 60px 0;
+            background-color: white;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #2a9d8f;
+            margin-right: 15px;
+            width: 30px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ffd166;
+        }
+        
+        .social-icons {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #4a6491;
+            color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: #2a9d8f;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #4a6491;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        /* Tambahan untuk tombol Facebook */
+.cta-button.facebook {
+    background-color: #1877F2;
+}
+
+.cta-button.facebook:hover {
+    background-color: #166FE5;
+}
+
+/* Atur tampilan tombol dalam satu baris */
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-buttons .cta-button {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+}
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+            }
+            
+            nav li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-paint-roller logo-icon"></i>
+                <h1>Wallpaper Decorasi Sidrap</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+<div class="container">
+    <h1>Wallpaper Decorasi Sidrap</h1>
+    <p>Temukan wallpaper dinding terbaik untuk menghias rumah, kantor, atau ruangan bisnis Anda. Berbagai motif modern, klasik, dan minimalis tersedia dengan kualitas premium.</p>
+    <div class="price">Mulai dari Rp 35.000 / roll</div>
+    
+    <div class="hero-buttons">
+        <a href="https://wa.me/6285824589711?text=Halo%20Wallpaper%20Decorasi%20Sidrap,%20saya%20ingin%20bertanya%20tentang%20produk%20wallpaper" class="cta-button whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+        </a>
+        
+        <a href="https://www.facebook.com/wallpaper.decorasi.sidrap.ii?mibextid=rS40aB7S9Ucbxw6v" class="cta-button facebook" target="_blank">
+            <i class="fab fa-facebook"></i> Kunjungi Facebook
+        </a>
+        
+        <a href="#produk" class="cta-button secondary">
+            <i class="fas fa-images"></i> Lihat Produk
+        </a>
+    </div>
+    
+
+</div>  
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produk">
+        <div class="container">
+            <h2 class="section-title">Produk Toko Wallpaper Decorasi Sidrap</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img wallpaper1"></div>
+                    <div class="product-content">
+                        <h3>Wallpaper Motif Segitiga Dan Kotak</h3>
+                        <div class="product-price">Rp 35.000</div>
+                        <p>Wallpaper motif segitiga dan kotak menampilkan pola geometris yang tersusun rapi dan berulang, menggabungkan garis tegas segitiga dengan bentuk stabil kotak.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img wallpaper2"></div>
+                    <div class="product-content">
+                        <h3>Pajangan Dinding</h3>
+                        <div class="product-price">Rp 250.000</div>
+                        <p>Pajangan ini berfungsi menambah nilai estetika, memperkuat karakter ruang, serta menciptakan suasana yang lebih hidup dan menarik.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img wallpaper3"></div>
+                    <div class="product-content">
+                        <h3>Wallpaper Motif Marmer</h3>
+                        <div class="product-price">Rp 35.000</div>
+                        <p>Wallpaper ini dapat memberikan kesan mewah, modern, dan bersih, cocok untuk memperindah interior rumah, kantor, maupun ruang usaha dengan suasana yang eksklusif dan estetis.</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img wallpaper4"></div>
+                    <div class="product-content">
+                        <h3>Wallpaper Motif Batik</h3>
+                        <div class="product-price">Rp 35.000</div>
+                        <p>Wallpaper ini menghadirkan nuansa etnik, elegan, dan berbudaya, sehingga mampu memperindah ruangan sekaligus menonjolkan nilai seni dan kearifan lokal dalam desain interior.</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img wallpaper5"></div>
+                    <div class="product-content">
+                        <h3>Kursi Stoll</h3>
+                        <div class="product-price">Rp 850.000 </div>
+                        <p>Kursi yang berfungsi sebagai tempat duduk tambahan, mudah dipindahkan, dan cocok digunakan di berbagai ruang seperti rumah, kafe, atau tempat usaha, dengan tampilan yang minimalis, fungsional, dan serbaguna.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img wallpaper6"></div>
+                    <div class="product-content">
+                        <h3>Jam Dinding</h3>
+                        <div class="product-price">Rp 250.000</div>
+                        <p>Jam dinding dengan hias yang bertama islami dan terdapat kaligrafi arab cocok untuk sebagai pajangan decorasi rumah dengan nuansa islami.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <div class="about-content">
+                <h2>Tentang Wallpaper Decorasi Sidrap</h2>
+                <p><span class="highlight">Wallpaper Decorasi Sidrap</span> adalah usaha rumahahan yang berfokus pada penyediaan wallpaper dinding berkualitas tinggi dengan berbagai motif dan desain terkini.</p>
+                <p>Kami menyediakan wallpaper dengan bahan berkualitas, tahan lama, dan mudah dipasang. Semua produk kami dipilih dengan teliti untuk memastikan kepuasan pelanggan.</p>
+                <p>Selain wallpaper, kami juga menyediakan dekorasi-dekorasi rumah lainnya untuk membuat rumah anda lebih bagus dan juga indah.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="kontak">
+        <div class="container">
+            <h2 class="section-title">Kontak & Lokasi</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Pesan Sekarang</h3>
+                    <p>Silakan hubungi kami untuk  pemesanan, konsultasi desain, atau mencari produk lain lebih lanjut.</p>
+                    
+                    <div class="contact-detail">
+                        <i class="fab fa-whatsapp contact-icon"></i>
+                        <div>
+                            <strong>WhatsApp:</strong><br>
+                            +6285824589711
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div>
+                            <strong>Telepon:</strong><br>
+                            +6285824589711
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fab fa-facebook contact-icon"></i>
+                        <div>
+                            <strong>Facebook:</strong><br>
+                            Wallpaper Decorasi Sidrap
+                        </div>
+                    </div>
+                    
+                    <div class="contact-buttons" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
+                        <a href="https://wa.me/6285824589711?text=Halo%20Wallpaper%20Decorasi%20Sidrap,%20saya%20ingin%20bertanya%20tentang%20produk%20wallpaper" class="cta-button whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        
+                        <a href="https://www.facebook.com/wallpaper.decorasi.sidrap.ii?mibextid=rS40aB7S9Ucbxw6v" class="cta-button facebook" target="_blank" style="background-color: #1877F2;">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Alamat</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <strong>Lokasi:</strong><br>
+                            Jln. Sultan Hasanuddin no 44 pangkajene sidrap<br>
+                            Sidrap, Sulawesi Selatan
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="far fa-clock contact-icon"></i>
+                        <div>
+                            <strong>Jam Operasional:</strong><br>
+                            Senin - Minggu: 08.30 - 17.30 WITA<br>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wallpaper Decorasi Sidrap</h3>
+                    <p>Penyedia wallpaper dinding berkualitas dengan berbagai motif dan desain terkini untuk rumah dan bisnis Anda.</p>
+
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-phone"></i> +6285824589711</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jln. Sultan Hasanuddin no 44 pangkajene sidrap</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tautan Cepat</h3>
+                    <p><a href="#home" style="color:#ccc; text-decoration:none;">Home</a></p>
+                    <p><a href="#produk" style="color:#ccc; text-decoration:none;">Produk</a></p>
+                    <p><a href="#tentang" style="color:#ccc; text-decoration:none;">Tentang Kami</a></p>
+                    <p><a href="#kontak" style="color:#ccc; text-decoration:none;">Kontak</a></p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Wallpaper Decorasi Sidrap. All rights reserved.</p>
+                <p>WhatsApp | Facebook |</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // WhatsApp button interaction
+        document.querySelectorAll('.cta-button.whatsapp').forEach(button => {
+            button.addEventListener('click', function() {
+                // Optional: Add tracking or analytics here
+                console.log('WhatsApp button clicked');
+            });
+        });
+    </script>
+</body>
+</html>
